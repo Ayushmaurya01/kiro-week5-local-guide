@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayagraj Street Food Guide - Local Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍛 Prayagraj Street Food Guide</h1>
+            <p class="tagline">Your local bhai for authentic street food recommendations</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="userQuery" 
+                        placeholder="Bhai, kya khana hai? (e.g., 'shaam ko kuch teekha khana hai')"
+                        autocomplete="off"
+                    >
+                    <button id="askButton">Ask Local Guide</button>
+                </div>
+                
+                <div class="quick-suggestions">
+                    <span class="suggestion-label">Quick asks:</span>
+                    <button class="suggestion-btn" data-query="subah halka nashta suggest karo">Morning nashta</button>
+                    <button class="suggestion-btn" data-query="shaam ko kuch teekha khana hai">Evening teekha</button>
+                    <button class="suggestion-btn" data-query="kumbh area ke paas best street food kya hai">Kumbh area food</button>
+                    <button class="suggestion-btn" data-query="meetha kuch chahiye">Something sweet</button>
+                </div>
+            </div>
+
+            <div class="response-section">
+                <div id="responseArea" class="response-area">
+                    <div class="welcome-message">
+                        <h3>🙏 Namaste! Welcome to Prayagraj</h3>
+                        <p>I'm your local street food guide. Ask me anything about our amazing street food - I understand local slang and can recommend based on time, taste, and area!</p>
+                        <div class="sample-queries">
+                            <p><strong>Try asking:</strong></p>
+                            <ul>
+                                <li>"Bhai shaam ko kuch teekha khana hai"</li>
+                                <li>"Subah halka nashta suggest karo"</li>
+                                <li>"Sangam area mein kya milega?"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by local context • Built with ❤️ for Prayagraj food lovers</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
